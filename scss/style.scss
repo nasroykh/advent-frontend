@@ -1,80 +1,330 @@
 @import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 100%;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 100%;
+	line-height: 1.4em;
 }
 
-// img {
-    // width: 100%;
-// }
+.navlink {
+	ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		li {
+			a {
+				margin: 0 1.2em;
+			}
+		}
+	}
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h3 {
+	font-size: 1.625em;
+}
+
+p {
+	font-size: 1.25em;
+}
 
 a {
-    text-decoration: none;
-    color: $mainTextColor;
+	text-decoration: none;
+	color: $mainTextColor;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: $secondaryColor;
+	height: 2.3625em;
+	border-radius: .5em;
+	color: #fff;
+	font-size: 1.5em;
+
+}
+
+section {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin: 6em 0;
 }
 
 html, body {
-    font-family: 'Nunito Sans', sans-serif;
-    margin: 0 5em;
+	font-family: 'Nunito Sans', sans-serif;
+	margin: 0 5em;
 }
 
 .logo {
-    font-family: 'Unkempt', cursive;
-    
-    a {
-        position: relative;
-        display: block;
-        padding: 0 .5em;
-        span {
-            background-color: $primaryColor;
-            z-index: -1;
-            padding: 1.2em;
-            left: 0;
-            border-radius: 100%;
-            position: absolute;
-        }
-    }
+	font-family: 'Unkempt', cursive;
+	
+	a {
+		position: relative;
+		display: block;
+		padding: 0 .5em;
+		span {
+			background-color: $primaryColor;
+			z-index: -1;
+			width: 3.2em;
+			height: 3.2em;
+			left: 0;
+			top: 10%;
+			border-radius: 100%;
+			position: absolute;
+		}
+	}
 }
 
 header {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2em 0;
 
-    .logo {
-        font-size: 1.5em;
-    }
+	nav > ul {
 
-    nav > ul {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+		span {
+			height: 1.5em;
+			margin: 0 1.2em;
+			width: 1px;
+			background-color: #ccc;
+		}
 
-        li, span {
-            margin: 0 1.2em;
-            cursor: pointer;
-        }
-
-        span {
-            height: 1.5em;
-            width: 1px;
-            background-color: #ccc;
-        }
-
-    }
+	}
 }
 
 main {
-    width: 75%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
-    
+	.section1 {
+
+		div:first-child {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			margin-right: 6em;
+			h1 {
+			
+			}
+
+			p {
+				margin: 1em 0 2em 0;
+			}
+
+			button {
+				font-weight: bold;
+				width: 50%;
+			}
+		}
+
+		div:last-child {
+			img {
+				width: 95%;
+			}
+		}
+	}
+
+	.section2 {
+		div:first-child {
+			img {
+				width: 80%;
+			}
+		}
+
+		div:last-child {
+			h2 {
+
+			}
+			
+			p {
+				margin: .5em 0;
+			}
+		}
+
+	}
+
+	.section3 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h2 {
+
+		}
+
+		hr {
+			border-color: $secondaryColor;
+			width: 6%;
+			margin: 3em 0;
+		}
+
+		.exp-container {
+			display: flex;
+			align-items: flex-start;
+			column-gap: 5em;
+			width: 90%;
+			div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 100%;
+				span {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				margin-bottom: .2em;
+					img {
+						width: 1.5em;
+						margin-right: 1.5em;
+					}
+					h3 {
+
+					}
+				}
+				p {		
+					font-size: 1.125em;
+				}
+			}
+		}
+	}
+
+	.section4 {
+		div:first-child {
+			h2 {
+
+			}
+			p {
+				margin: 1em 0 2em 0;
+				color : #828282;
+			}
+
+			form {
+				input {
+					width: 57%;
+					padding: .5em;
+					font-size: 1.25em;
+					border-radius: .5em;
+					border: 1px solid #E0E0E0;
+					outline: none;
+					font-weight: 300;
+					margin-right: .3em;
+				}
+				input::placeholder {
+					font-weight: 300;
+					color: #828282;
+				}
+				button {
+					font-weight: 500;
+					font-size: 1.25em;
+					width: 27%;
+				}
+			}
+		}
+
+		div:last-child {
+			img {
+				padding-left: 1.5em;
+			}
+		}
+
+	}
+	
 }
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 3.5em 0;
+	
+	
+	& > div:first-child {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.logo {
+			a {
+				span {
+					width: 2.2em;
+					height: 2.2em;
+					top: 10%;
+				}
+			}
+		}
+
+		h1 {
+			font-size: 2.25em;
+		}
+
+
+	}
+
+	hr {
+		border-color: #EBEAED;
+		width: 97%;
+		opacity: 0.2;
+		margin: 2em 0;
+	}
+
+	& > div:last-child {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 97%;
+		p {
+			font-size: 1em;
+			color: #151439;
+			opacity: 0.4;
+		}
+		span {
+			display: flex;
+			align-items: center;
+			column-gap: 2.5em;
+			a {
+				img {
+					width: 100%;	
+				}
+			}
+		}
+	}
+
+}
+
+@media (min-width:576px) {
+	html {
+	  font-size: 10px;
+	}
+  }
+  @media (min-width:850px) {
+	html {
+	  font-size: 12px;
+	}
+  }
+  @media (min-width:1200px) {
+	html {
+	  font-size: 16px;
+	}
+  }
