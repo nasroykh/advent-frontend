@@ -10,16 +10,20 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
-		<header>
-			<div class="logo">
-				<a href="">
-					<span></span>
-					<h1>advent</h1>
-				</a>
-			</div>
-			<div class="navlink">
+		<div>
+			<header>
 				<nav>
-					<ul>
+					<div class="logo">
+						<a href="#">
+							<h1>advent</h1>
+						</a>
+					</div>
+					<div id="menu-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<ul class="navbar">
 						<li>
 							<a href="">
 								About us
@@ -35,7 +39,6 @@
 								Blog
 							</a> 
 						</li>
-						<span></span>
 						<li>
 							<a href="">
 								Contact us
@@ -43,118 +46,114 @@
 						</li>
 					</ul>
 				</nav>
-			</div>
-		</header>
-
-		<main>
-			<section class="section1">
+			</header>
+	
+			<main>
+				<section class="hero-section">
+					<div>
+						<h1>Adventure is worthwhile in itself</h1>
+						<p>Explore and travel new places with advent and enjoy the best experience</p>
+						<button class="btn hero-btn">Get Started →</button>
+					</div>
+					<div>
+						<img src="images/illustration1.svg" alt="" />
+					</div>
+				</section>
+	
+				<section class="life-section">
+					<div>
+						<img src="images/illustration2.svg" alt="">
+					</div>
+					<div>
+						<h2>Life is either a daring adventure or nothing</h2>
+						<p>
+							Life should not be a journey to the grave with the intention of arriving safely in a pretty and well preserved body,
+							 but rather to skid in broadside in a cloud of smoke,
+							  thoroughly used up, totally worn out,
+							   and loudly proclaiming ‘Wow! What a Ride!'
+						</p>
+					</div>
+				</section>
+	
+				<section class="exp-section">
+					<h2>What you'll experience with us!</h2>
+					<hr/>
+					<div class="exp-container">
+						<div>
+							<span>
+								<img src="images/egg.svg" alt="">
+								<h3>Food is mood</h3>
+							</span>
+							<p>One cannot think well, love well, sleep well, if one has not dined well</p>
+						</div>
+						<div>
+							<span>
+								<img src="images/vanpassenger.svg" alt="">
+								<h3>Motor vehicle</h3>
+							</span>
+							<p>Road trips are the equivalent of Human Wings so we offer that via motor home</p>
+						</div>
+						<div>
+							<span>
+								<img src="images/camping.svg" alt="">
+								<h3>Night Camping</h3>
+							</span>
+							<p>The darker the night, the brighter the stars and this experience is breathtaking Camping experience</p>
+						</div>
+					</div>
+				</section>
+	
+				<section class="email-section">
+					<div>
+						<h2>We'd Love to Hear from You</h2>
+						<p>Please submit your information and a advent representative will get in touch with you</p>
+						<form>
+							<input type="email" name="" id="" placeholder="Enter Your email here" />
+							<button type="submit">Send Email</button>
+						</form>
+					</div>
+					<div>
+						<img src="images/illustration3.svg" alt="">
+					</div>
+				</section>
+			</main>
+	
+			<footer>
 				<div>
-					<h1>Adventure is worthwhile in itself</h1>
-					<p>Explore and travel new places with advent and enjoy the best experience</p>
-					<button>Get Started →</button>
+					<div class="logo small-logo">
+						<a href="#">
+							<h1>advent</h1>
+						</a>
+					</div>
+					<ul class="navbar-footer">
+						<li>
+							<a href="">Services</a> 
+						</li>
+						<li>
+							<a href="">About us</a> 
+						</li>
+						<li>
+							<a href="">Blog</a> 
+						</li>
+					</ul>
 				</div>
-				<div>
-					<img src="images/illustration1.svg" alt="" />
-				</div>
-			</section>
-
-			<section class="section2">
-				<div>
-					<img src="images/illustration2.svg" alt="">
-				</div>
-				<div>
-					<h2>Life is either a daring adventure or nothing</h2>
-					<p>
-						Life should not be a journey to the grave with the intention of arriving safely in a pretty and well preserved body,
-						 but rather to skid in broadside in a cloud of smoke,
-						  thoroughly used up, totally worn out,
-						   and loudly proclaiming ‘Wow! What a Ride!'
-					</p>
-				</div>
-			</section>
-
-			<section class="section3">
-				<h2>What you'll experience with us!</h2>
 				<hr/>
-				<div class="exp-container">
+				<div class="social-network">
+					<p>© 2021 advent. All rights reserved.</p>
 					<div>
-						<span>
-							<img src="images/egg.svg" alt="">
-							<h3>Food is mood</h3>
-						</span>
-						<p>One cannot think well, love well, sleep well, if one has not dined well</p>
-					</div>
-					<div>
-						<span>
-							<img src="images/vanpassenger.svg" alt="">
-							<h3>Motor vehicle</h3>
-						</span>
-						<p>Road trips are the equivalent of Human Wings so we offer that via motor home</p>
-					</div>
-					<div>
-						<span>
-							<img src="images/camping.svg" alt="">
-							<h3>Night Camping</h3>
-						</span>
-						<p>The darker the night, the brighter the stars and this experience is breathtaking Camping experience</p>
+						<a href="">
+							<img src="images/twitter.svg" alt="">
+						</a>
+						<a href="">
+							<img src="images/facebook.svg" alt="">
+						</a>
+						<a href="">
+							<img src="images/googleplus.svg" alt="">
+						</a>
 					</div>
 				</div>
-			</section>
-
-			<section class="section4">
-				<div>
-					<h2>We'd Love to Hear from You</h2>
-					<p>Please submit your information and a advent representative will get in touch with you</p>
-					<form>
-						<input type="email" name="" id="" placeholder="Enter Your email here" />
-						<button type="submit">Send Email</button>
-					</form>
-				</div>
-				<div>
-					<img src="images/illustration3.svg" alt="">
-				</div>
-			</section>
-		</main>
-
-		<footer>
-			<div>
-				<div class="logo">
-					<a href="">
-						<span></span>
-						<h1>advent</h1>
-					</a>
-				</div>
-				<div class="navlink">
-					<nav>
-						<ul>
-							<li>
-								<a href="">Services</a> 
-							</li>
-							<li>
-								<a href="">About us</a> 
-							</li>
-							<li>
-								<a href="">Blog</a> 
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<hr/>
-			<div>
-				<p>© 2021 advent. All rights reserved.</p>
-				<span>
-					<a href="">
-						<img src="images/twitter.svg" alt="">
-					</a>
-					<a href="">
-						<img src="images/facebook.svg" alt="">
-					</a>
-					<a href="">
-						<img src="images/googleplus.svg" alt="">
-					</a>
-				</span>
-			</div>
-		</footer>
+			</footer>
+		</div>
+		<script src="script.js"></script>
 	</body>
 </html>

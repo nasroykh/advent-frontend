@@ -1,3 +1,9 @@
 $primaryColor: #64FCD9;
 $secondaryColor: #FFB61D;
 $mainTextColor: #000;
+
+%flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
