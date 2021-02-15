@@ -1,4 +1,4 @@
-Website created from an existing web design on Figma, using : -HTML -CSS -SASS.
+Website created from an existing web design on Figma, using : HTML / CSS/SASS / JavaScript.
 
 I designed the mobile and tablet version to follow the "mobile-first" approach .
 
